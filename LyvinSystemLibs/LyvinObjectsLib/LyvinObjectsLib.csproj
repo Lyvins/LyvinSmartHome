@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A814E69D-2D62-4F67-B567-49A8A12E64CB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LyvinObjectsLib</RootNamespace>
+    <AssemblyName>LyvinObjectsLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>C:\Builds\Lyvins\Debug\CommonFiles\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>C:\Builds\Lyvins\Debug\CommonFiles\LyvinObjectsLib.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>C:\Builds\Lyvins\Release\CommonFiles\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>C:\Builds\Lyvins\Release\CommonFiles\LyvinObjectsLib.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actions\ActionManager.cs" />
+    <Compile Include="Actions\LyvinAction.cs" />
+    <Compile Include="Applications\ApplicationManager.cs" />
+    <Compile Include="Applications\LyvinApplication.cs" />
+    <Compile Include="Converter.cs" />
+    <Compile Include="Devices\Types\ColoredLighting.cs" />
+    <Compile Include="Devices\LyvinDevice.cs" />
+    <Compile Include="Devices\DeviceGroup.cs" />
+    <Compile Include="Devices\DeviceManager.cs" />
+    <Compile Include="Devices\DeviceType.cs" />
+    <Compile Include="Devices\DeviceZone.cs" />
+    <Compile Include="Devices\Types\DimmableDevice.cs" />
+    <Compile Include="Devices\Types\Lighting.cs" />
+    <Compile Include="Devices\Types\Sensor.cs" />
+    <Compile Include="Events\LyvinEvent.cs" />
+    <Compile Include="Events\EventManager.cs" />
+    <Compile Include="Policies\LyvinPolicy.cs" />
+    <Compile Include="Policies\PolicyManager.cs" />
+    <Compile Include="Policies\LyvinUserGroupPolicy.cs" />
+    <Compile Include="Policies\LyvinUserPolicy.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Subscriptions\SubscribedAction.cs" />
+    <Compile Include="Subscriptions\SubscribedApplication.cs" />
+    <Compile Include="Subscriptions\SubscribedEvent.cs" />
+    <Compile Include="Users\LyvinUser.cs" />
+    <Compile Include="Users\LyvinUserGroup.cs" />
+    <Compile Include="Users\UserManager.cs" />
+    <Compile Include="WidgetDevices\LyvinWidget.cs" />
+    <Compile Include="WidgetDevices\LyvinWidgetDevice.cs" />
+    <Compile Include="WidgetDevices\WidgetDeviceManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LyvinDeviceDriverLib\LyvinDeviceDriverLib.csproj">
+      <Project>{E6932129-CE6B-4489-A9AA-01426C279B80}</Project>
+      <Name>LyvinDeviceDriverLib</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\LyvinSystemLogicLib\LyvinSystemLogicLib.csproj">
+      <Project>{02540F8B-8D9E-4B63-AE00-24AF9F5412C0}</Project>
+      <Name>LyvinSystemLogicLib</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

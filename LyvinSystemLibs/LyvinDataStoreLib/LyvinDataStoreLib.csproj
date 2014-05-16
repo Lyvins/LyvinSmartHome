@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5EA6E7D1-3714-4A4D-9845-A533845C51E9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LyvinDataStoreLib</RootNamespace>
+    <AssemblyName>LyvinDataStoreLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>C:\Builds\Lyvins\Debug\CommonFiles\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>C:\Builds\Lyvins\Debug\CommonFiles\\LyvinDataStoreLib.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>C:\Builds\Lyvins\Release\CommonFiles\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>C:\Builds\Lyvins\Release\CommonFiles\LyvinDataStoreLib.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DSManager.cs" />
+    <Compile Include="LyvinDeviceData\AudioOutputData.cs" />
+    <Compile Include="LyvinDeviceData\AVInputData.cs" />
+    <Compile Include="LyvinDeviceData\DatabaseHelperObjects\DatabaseHelperDevice.cs" />
+    <Compile Include="LyvinDeviceData\DeviceData.cs" />
+    <Compile Include="LyvinDeviceData\DeviceTimeOut.cs" />
+    <Compile Include="LyvinDeviceData\DeviceTimeOutData.cs" />
+    <Compile Include="LyvinDeviceData\LightingData.cs" />
+    <Compile Include="LyvinDeviceData\MotionPIRSensor.cs" />
+    <Compile Include="LyvinDeviceData\OpenCloseSensor.cs" />
+    <Compile Include="LyvinDeviceData\SecurityData.cs" />
+    <Compile Include="LyvinDeviceData\SensorData.cs" />
+    <Compile Include="LyvinDeviceData\SwitchData.cs" />
+    <Compile Include="LyvinDeviceData\VideoOutputData.cs" />
+    <Compile Include="LyvinLayoutData\Activity.cs" />
+    <Compile Include="LyvinLayoutData\ActivityData.cs" />
+    <Compile Include="LyvinLayoutData\ActivityInRoom.cs" />
+    <Compile Include="LyvinLayoutData\Address.cs" />
+    <Compile Include="LyvinLayoutData\Attribute.cs" />
+    <Compile Include="LyvinLayoutData\AttributeData.cs" />
+    <Compile Include="LyvinLayoutData\AttributeInRoom.cs" />
+    <Compile Include="LyvinLayoutData\Building.cs" />
+    <Compile Include="LyvinLayoutData\BuildingData.cs" />
+    <Compile Include="LyvinLayoutData\ConnectedToRoom.cs" />
+    <Compile Include="LyvinLayoutData\DeviceInRoom.cs" />
+    <Compile Include="LyvinLayoutData\DeviceInZone.cs" />
+    <Compile Include="LyvinLayoutData\Dimension.cs" />
+    <Compile Include="LyvinLayoutData\Elevation.cs" />
+    <Compile Include="LyvinLayoutData\LayoutData.cs" />
+    <Compile Include="LyvinLayoutData\OccupancyModifier.cs" />
+    <Compile Include="LyvinLayoutData\People.cs" />
+    <Compile Include="LyvinLayoutData\Room.cs" />
+    <Compile Include="LyvinLayoutData\Zone.cs" />
+    <Compile Include="LyvinLayoutData\ZoneData.cs" />
+    <Compile Include="LyvinLogData\DeviceRawDataItem.cs" />
+    <Compile Include="LyvinLogData\DeviceRawDataLog.cs" />
+    <Compile Include="LyvinLogData\LogData.cs" />
+    <Compile Include="LyvinLogData\MotionPIRSensorLog.cs" />
+    <Compile Include="LyvinLogData\OccupancyLog.cs" />
+    <Compile Include="LyvinLogData\OccupancyLogData.cs" />
+    <Compile Include="LyvinLogData\OpenCloseSensorLog.cs" />
+    <Compile Include="LyvinLogData\SensorLogData.cs" />
+    <Compile Include="Models\Generated\Database.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PetaPoco.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Models\Generated\Database.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Database.cs</LastGenOutput>
+    </None>
+    <None Include="Models\Generated\PetaPoco.Core.ttinclude" />
+    <None Include="Models\Generated\PetaPoco.Generator.ttinclude" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LyvinObjectsLib\LyvinObjectsLib.csproj">
+      <Project>{A814E69D-2D62-4F67-B567-49A8A12E64CB}</Project>
+      <Name>LyvinObjectsLib</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\LyvinSystemLogicLib\LyvinSystemLogicLib.csproj">
+      <Project>{02540F8B-8D9E-4B63-AE00-24AF9F5412C0}</Project>
+      <Name>LyvinSystemLogicLib</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

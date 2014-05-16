@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{13A40CEF-1D10-4368-9172-5C1FF0207949}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LyvinElevationAPIContracts</RootNamespace>
+    <AssemblyName>LyvinElevationAPIContracts</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>C:\Builds\Lyvins\Debug\CommonFiles\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>C:\Builds\Lyvins\Debug\CommonFiles\LyvinElevationAPIContracts.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>C:\Builds\Lyvins\Release\CommonFiles\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>C:\Builds\Lyvins\Release\CommonFiles\LyvinElevationAPIContracts.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ElevationAPIMessages\ElevationAPIApplication.cs" />
+    <Compile Include="ElevationAPIMessages\ElevationAPIDevice.cs" />
+    <Compile Include="ElevationAPIMessages\ElevationCleanupReply.cs" />
+    <Compile Include="ElevationAPIMessages\ElevationCleanupReplyBody.cs" />
+    <Compile Include="ElevationAPIMessages\ElevationCleanupRequest.cs" />
+    <Compile Include="ElevationAPIMessages\ElevationCleanupRequestBody.cs" />
+    <Compile Include="ElevationAPIMessages\ElevationReachableReply.cs" />
+    <Compile Include="ElevationAPIMessages\ElevationReachableReplyBody.cs" />
+    <Compile Include="ElevationAPIMessages\ElevationReachableRequest.cs" />
+    <Compile Include="ElevationAPIMessages\ElevationReachableRequestBody.cs" />
+    <Compile Include="ElevationAPIMessages\ElevationRequestReply.cs" />
+    <Compile Include="ElevationAPIMessages\ElevationRequestReplyBody.cs" />
+    <Compile Include="ElevationAPIMessages\ElevationRequestRequest.cs" />
+    <Compile Include="ElevationAPIMessages\ElevationRequestRequestBody.cs" />
+    <Compile Include="ElevationAPIMessages\ElevationRequiredReply.cs" />
+    <Compile Include="ElevationAPIMessages\ElevationRequiredReplyBody.cs" />
+    <Compile Include="ElevationAPIMessages\ElevationRequiredRequest.cs" />
+    <Compile Include="ElevationAPIMessages\ElevationRequiredRequestBody.cs" />
+    <Compile Include="ElevationAPIMessages\ElevationAPIHeader.cs" />
+    <Compile Include="ElevationAPIMessages\ElevationAPIPolicy.cs" />
+    <Compile Include="ElevationAPIMessages\SystemPassRequiredReply.cs" />
+    <Compile Include="ElevationAPIMessages\SystemPassRequiredReplyBody.cs" />
+    <Compile Include="ElevationAPIMessages\SystemPassRequiredRequest.cs" />
+    <Compile Include="ElevationAPIMessages\SystemPassRequiredRequestBody.cs" />
+    <Compile Include="ElevationAPIMessages\ElevationAPIUser.cs" />
+    <Compile Include="ElevationAPIMessages\ElevationAPIWidget.cs" />
+    <Compile Include="ElevationAPIMessages\ElevationAPIWidgetDevice.cs" />
+    <Compile Include="ISCElevationReplyAPI.cs" />
+    <Compile Include="ISCElevationRequestAPI.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

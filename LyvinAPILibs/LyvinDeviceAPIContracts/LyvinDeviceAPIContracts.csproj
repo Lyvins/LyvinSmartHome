@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8220666C-F634-43D9-BB08-95A002E25765}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LyvinDeviceAPIContracts</RootNamespace>
+    <AssemblyName>LyvinDeviceAPIContracts</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>C:\Builds\Lyvins\Debug\CommonFiles\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>C:\Builds\Lyvins\Debug\CommonFiles\LyvinDeviceAPIContracts.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>C:\Builds\Lyvins\Release\CommonFiles\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>C:\Builds\Lyvins\Release\CommonFiles\LyvinDeviceAPIContracts.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DeviceAPIMessages\DeviceAPIApplication.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceAPIAttribute.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceAPIDevice.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceAPIDeviceGroup.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceAPIDeviceType.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceAPIDeviceZone.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceChangedEvent.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceChangedEventBody.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceGroupListReply.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceGroupListReplyBody.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceGroupListRequest.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceGroupListRequestBody.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceListReply.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceListReplyBody.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceListRequest.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceListRequestBody.cs" />
+    <Compile Include="DeviceAPIMessages\DevicePreUpdateEvent.cs" />
+    <Compile Include="DeviceAPIMessages\DevicePreUpdateEventBody.cs" />
+    <Compile Include="DeviceAPIMessages\DevicePreUpdateReply.cs" />
+    <Compile Include="DeviceAPIMessages\DevicePreUpdateReplyBody.cs" />
+    <Compile Include="DeviceAPIMessages\DevicePreUpdateRequest.cs" />
+    <Compile Include="DeviceAPIMessages\DevicePreUpdateRequestBody.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceTypeListReply.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceTypeListReplyBody.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceTypeListRequest.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceTypeListRequestBody.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceUpdateReply.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceUpdateReplyBody.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceUpdateRequest.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceUpdateRequestBody.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceValueReply.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceValueReplyBody.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceValueRequest.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceValueRequestBody.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceZoneListReply.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceZoneListReplyBody.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceZoneListRequest.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceZoneListRequestBody.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceAPIError.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceAPIHeader.cs" />
+    <Compile Include="DeviceAPIMessages\DeviceAPIWarning.cs" />
+    <Compile Include="ISCDeviceReplyAPI.cs" />
+    <Compile Include="ISCDeviceRequestAPI.cs" />
+    <Compile Include="ISCDeviceEventAPI.cs" />
+    <Compile Include="ISCDeviceUpdateReplyAPI.cs" />
+    <Compile Include="ISCDeviceUpdateRequestAPI.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8A37D36C-3E4D-491C-B3E4-EC566DCA5600}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LyvinAILib</RootNamespace>
+    <AssemblyName>LyvinAILib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>C:\Builds\Lyvins\Debug\CommonFiles\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>C:\Builds\Lyvins\Debug\CommonFiles\LyvinAILib.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>C:\Builds\Lyvins\Release\CommonFiles\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>C:\Builds\Lyvins\Release\CommonFiles\LyvinAILib.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IAIModule.cs" />
+    <Compile Include="IIEManager.cs" />
+    <Compile Include="InternalEventArgs.cs" />
+    <Compile Include="InternalEventMessages\IE1000AIEvent.cs" />
+    <Compile Include="InternalEventMessages\IE1000Input.cs" />
+    <Compile Include="InternalEventMessages\IE1000Output.cs" />
+    <Compile Include="InternalEventMessages\IE1010AIEvent.cs" />
+    <Compile Include="InternalEventMessages\IE2000AIEvent.cs" />
+    <Compile Include="InternalEventMessages\IE2000Input.cs" />
+    <Compile Include="InternalEventMessages\IE2000Output.cs" />
+    <Compile Include="InternalEventMessages\IE2000OutputRoom.cs" />
+    <Compile Include="InternalEventMessages\IE2001AbsoluteProbability.cs" />
+    <Compile Include="InternalEventMessages\IE2001AIEvent.cs" />
+    <Compile Include="InternalEventMessages\IE2001Input.cs" />
+    <Compile Include="InternalEventMessages\IE2001Output.cs" />
+    <Compile Include="InternalEventMessages\IE2001RelativeProbability.cs" />
+    <Compile Include="InternalEventMessages\IE50Device.cs" />
+    <Compile Include="InternalEventMessages\IE50DeviceEvent.cs" />
+    <Compile Include="InternalEventMessages\IE50DeviceType.cs" />
+    <Compile Include="InternalEventMessages\IEHeader.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LyvinDataStoreLib\LyvinDataStoreLib.csproj">
+      <Project>{5EA6E7D1-3714-4A4D-9845-A533845C51E9}</Project>
+      <Name>LyvinDataStoreLib</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

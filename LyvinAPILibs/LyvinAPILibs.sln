@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LyvinElevationAPIContracts", "LyvinElevationAPIContracts\LyvinElevationAPIContracts.csproj", "{13A40CEF-1D10-4368-9172-5C1FF0207949}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LyvinApplicationManagerAPIContracts", "LyvinApplicationManagerAPIContracts\LyvinApplicationManagerAPIContracts.csproj", "{9040AFC2-3A21-4D35-AE43-6B6C3A1FA830}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LyvinApplicationAPIContracts", "LyvinApplicationAPIContracts\LyvinApplicationAPIContracts.csproj", "{32E4AF63-3338-4A03-AB6E-E7546CBAE757}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LyvinDeviceAPIContracts", "LyvinDeviceAPIContracts\LyvinDeviceAPIContracts.csproj", "{8220666C-F634-43D9-BB08-95A002E25765}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LyvinOSAPIContracts", "LyvinOSAPIContracts\LyvinOSAPIContracts.csproj", "{88431CD4-6520-4A33-B6F4-239E52E6ECD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LyvinWidgetManagerAPIContracts", "LyvinWidgetManagerAPIContracts\LyvinWidgetManagerAPIContracts.csproj", "{5A9C3E9A-CB00-4485-9AE2-F5520C488F33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LyvinWidgetAPIContracts", "LyvinWidgetAPIContracts\LyvinWidgetAPIContracts.csproj", "{E91767F7-62F2-4E2F-BB87-37DABB33B2FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13A40CEF-1D10-4368-9172-5C1FF0207949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13A40CEF-1D10-4368-9172-5C1FF0207949}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13A40CEF-1D10-4368-9172-5C1FF0207949}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13A40CEF-1D10-4368-9172-5C1FF0207949}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9040AFC2-3A21-4D35-AE43-6B6C3A1FA830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9040AFC2-3A21-4D35-AE43-6B6C3A1FA830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9040AFC2-3A21-4D35-AE43-6B6C3A1FA830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9040AFC2-3A21-4D35-AE43-6B6C3A1FA830}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32E4AF63-3338-4A03-AB6E-E7546CBAE757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32E4AF63-3338-4A03-AB6E-E7546CBAE757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32E4AF63-3338-4A03-AB6E-E7546CBAE757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32E4AF63-3338-4A03-AB6E-E7546CBAE757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8220666C-F634-43D9-BB08-95A002E25765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8220666C-F634-43D9-BB08-95A002E25765}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8220666C-F634-43D9-BB08-95A002E25765}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8220666C-F634-43D9-BB08-95A002E25765}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88431CD4-6520-4A33-B6F4-239E52E6ECD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88431CD4-6520-4A33-B6F4-239E52E6ECD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88431CD4-6520-4A33-B6F4-239E52E6ECD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88431CD4-6520-4A33-B6F4-239E52E6ECD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A9C3E9A-CB00-4485-9AE2-F5520C488F33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A9C3E9A-CB00-4485-9AE2-F5520C488F33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A9C3E9A-CB00-4485-9AE2-F5520C488F33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A9C3E9A-CB00-4485-9AE2-F5520C488F33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E91767F7-62F2-4E2F-BB87-37DABB33B2FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E91767F7-62F2-4E2F-BB87-37DABB33B2FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E91767F7-62F2-4E2F-BB87-37DABB33B2FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E91767F7-62F2-4E2F-BB87-37DABB33B2FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
